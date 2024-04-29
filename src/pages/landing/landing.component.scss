@@ -23,7 +23,7 @@
   }
 
   .section3-right-image {
-    width: 750px;
+    width: 650px;
   }
 
   img {
@@ -113,20 +113,23 @@
     width: 100% !important;
   }
 
-  .section2 {
+  .section2, .pricing {
     padding: 48px !important;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
   }
 
   .section3 {
     padding: 48px !important;
     flex-direction: column-reverse !important;
-
     &-left {
       &-cards {
         flex-direction: column !important;
       }
     }
+  }
+  .pricing-left-prices {
+    display: flex !important;
+    flex-direction: column !important;
   }
 }
 
