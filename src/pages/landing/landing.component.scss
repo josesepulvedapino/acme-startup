@@ -87,6 +87,12 @@
   .section3 {
     padding: 48px !important;
     flex-direction: column-reverse !important;
+    &-left {
+      &-cards {
+        flex-direction: column !important;
+
+      }
+    }
   }
 }
 
