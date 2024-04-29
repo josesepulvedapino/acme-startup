@@ -9,6 +9,15 @@
   .icon-purple {
     fill: #9333ea;
   }
+  .section2-right-image {
+    width: 550px;
+  }
+  .section3-right-image {
+    width: 750px;
+  }
+  img {
+    border-radius: 12px;
+  }
   .section1 {
     background: linear-gradient(to right, #4338ca, #6d28d9);
     padding-block: 192px;
@@ -36,27 +45,26 @@
       }
     }
     &-right {
-      img {
-        border-radius: 12px;
-      }
     }
   }
   .section3 {
     background: linear-gradient(to right, #6d28d9, #9333ea);
     padding-block: 128px;
     padding-inline: 168px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
     &-left {
-
-    }
-    &-right {
-
       &-cards {
         display: flex;
         flex-direction: row;
         gap: 24px;
-        &-item {
-        }
+
       }
+    }
+    &-right {
     }
 
   }
@@ -64,18 +72,69 @@
   }
 }
 
-@media (max-width: 1048px) {
+
+@media (max-width: 849px) {
+  .section2-right-image {
+    width: 100% !important;
+  }
+  .section3-right-image {
+    width: 100% !important;
+  }
   .section2 {
-    padding: 16px !important;
+    padding: 48px !important;
     flex-direction: column !important;
   }
   .section3 {
-    padding: 16px !important;
+    padding: 48px !important;
+    flex-direction: column-reverse !important;
   }
 }
-@media (max-width: 1460px) {
+
+@media (min-width: 850px) and (max-width: 1048px) {
+  .section2-right-image {
+    width: 500px !important;
+  }
+  .section3-right-image {
+    width: 500px !important;
+  }
+  .section2 {
+    padding: 48px !important;
+    flex-direction: column !important;
+  }
+  .section3 {
+    padding: 48px !important;
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media (min-width: 1049px) and (max-width: 1248px) {
+  .section2-right-image {
+    width: 500px !important;
+  }
+  .section3-right-image {
+    width: 500px !important;
+  }
+  .section2 {
+    padding: 48px !important;
+    flex-direction: column !important;
+  }
+  .section3 {
+    padding: 48px !important;
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media (min-width: 1249px) and (max-width: 1460px) {
+  .section2-right-image {
+    width: 500px !important;
+  }
+  .section3-right-image {
+    width: 500px !important;
+  }
   .section2,
   .section3 {
     padding-inline: 60px !important;
   }
 }
+
+
